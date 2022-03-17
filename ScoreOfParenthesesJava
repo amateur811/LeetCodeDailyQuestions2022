@@ -1,0 +1,26 @@
+//IN JAVA 
+
+class Solution {
+    public int scoreOfParentheses(String s) {
+        int count=0,equal=0;
+        //traverse & check the character
+        for(int v=0;v<s.length();v++){
+            if(s.charAt(v)=='('){
+                equal++;
+            }
+            
+            else{
+                //deduct the value of equal varible
+                equal--;
+                if(s.charAt(v-1)=='('){
+                    count +=1<<bal;
+                }
+            }
+        }
+        //print the value of count
+        return count;
+    }
+}
+
+//Time Complexity  = O(N)
+//Space Complexity = O(1)
